@@ -1,0 +1,273 @@
+:root {
+    --primary: ;
+    --ligth: #fff;
+    --dark: #000;
+    --diasable: #e7e7e7;
+    --danger: #D33F49;
+    --white: #fafafb;
+    --purple:#a882e6;
+    --blue-light:#04d4c3;
+    --blue-dark:#2a73c2;
+    --green: #a5c882;
+}
+
+/* INFO */
+
+.info {
+  display: flex;
+  justify-content: end;
+}
+
+.info i {
+  font-size: 35px;
+  color: var(--danger);
+}
+
+/* WEATHER */
+
+
+
+
+/* PARTICLE*/
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+} 
+
+body {
+  background: linear-gradient(to bottom,var(--purple),var(--blue-light));
+  margin: 0;
+  padding: 0;
+  height: auto;   
+  font-family: 'Prompt', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+*:first-letter {
+  text-transform: capitalize;
+}
+
+.perfil h1 {
+  color: var(--purple);
+  font-size: 30px;
+}
+
+.perfil span {
+  color: var(--dark);
+  letter-spacing: 1px;
+}
+
+#fecha {
+  color: var(--dark);
+  padding: 10px 0 5px 0px;
+}
+
+.border_radius {
+  border-radius: 5px;
+}
+ul {
+  padding: 0;
+}
+
+.list {
+  position: relative;
+  margin: 25px auto;
+  padding: 10px;
+  background-color: var(--ligth);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 9px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#fecha {
+  color: var(--dark);
+  padding: 20px 0 5px 0px;
+
+}
+
+/*ADD TASK*/
+
+.agregar-tarea {
+  background-color: var(--diasable) ;
+  border-radius: 15px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  padding: 6px;
+  margin: 20px 0;
+}
+
+.agregar-tarea input {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--diasable);
+  padding-left: 6px;
+  font-size: 25px;
+  color: var(--blue-dark);
+}
+
+.agregar-tarea input::placeholder {
+  font-size: 1.5rem;
+  color: var(--blue-dark);
+}
+
+.agregar-tarea i{
+  font-size: 50px;
+  color: var(--blue-dark);
+
+}
+.agregar-tarea i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.seccion-tarea li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--purple);
+  border-radius: 15px;
+  padding: 8px;
+  color: var(--white);
+  margin: 10px 0;
+}
+.seccion-tarea i {
+  font-size: 25px;
+}
+
+.seccion-tarea > ul p {
+  font-size: 1.2rem;
+}
+
+.seccion-tarea i:hover {
+  color: var(--danger);
+  cursor: pointer;
+}
+
+.line-through{
+  text-decoration: line-through;
+  color : var(--danger);
+} 
+
+/* FOOTER */
+
+h1 {
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+
+p {
+  letter-spacing: 1px;
+  font-size:14px;
+  color: #333333;
+}
+
+.footer {
+  position:relative;
+  text-align:center;
+  color:white;
+  margin-top: auto;
+}
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
+}
+
+/* ANIMATION */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF_8">
+    <meta http_equiv="X_UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device_width, initial_scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title> Proyecto - TASKER - Matias N Zamora </title>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+    <div class="list border_Radius">
+
+        <div id="container">
+            <div id="temp">
+                <h1 id="temp-value"></h1>
+                <h1 id="temp-description"></h1>
+            </div>
+            <div id="location">
+                <h2 id="location-city"></h2>
+                <img id="animate-icon" src="" alt="" height="28" width="28">
+            </div>
+        </div>
+
+        <div class="info">
+            <i id="info" onclick="info()" class="fa-solid fa-circle-question"> </i>
+        </div> 
+
+        <div class="perfil">
+            <div id="fecha"></div>
+            <h1 id="name"> Hola </h1>
+            <span> Cumplamos nuestaras tareas </span>
+        </div>
+
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="agregar una tarea">
+            <i id="boton-enter"class="fas fa-plus-circle"></i>
+        </div>
+
+        <div class="seccion-tarea">
+            <ul id="lista">
+                <!-- <li id="elemento">
+                    <i class="far fa-circle co" data="realizado" id="0"></i>
+                    <p class="text"> Hacer la tarea de matematicas </p>
+                    <i class="fas fa-trash de" data="eliminado" id="0"></i> 
+                </li>
+                <li id="elemento">
+                    <i class="far fa-circle co" data="realizado" id="0"></i>
+                    <p class="text"> Lavar la ropa </p>
+                    <i class="fas fa-trash de" data="eliminado" id="0"></i> 
+                </li> -->
+            </ul>
+        </div>  
+        
+    </div>
+   
+    <footer class="footer">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+        <!--Waves end-->
+        
+        </div>
+        <!--Header ends-->
+        
+        <!--Content starts-->
+        <div class="content flex">
+        <p> Copyright © 2022 <a>Matias N Zamora</a> </p>
+    </footer>
+    
+    <!-- Sweet lib -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/sweetAlert.js"></script>
+    <script src="./js/me.js"></script>
+
+    <!-- Scripts -->
+    <script src="/js/script.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="https://kit.fontawesome.com/f0c97317d0.js" crossorigin="anonymous"></script>
+    
+    <!-- stats.js lib -->
+    <script src="./js/particles.min.js"></script> 
+    <script src="./js/particle.js"></script>
+
+</body>
+</html>
