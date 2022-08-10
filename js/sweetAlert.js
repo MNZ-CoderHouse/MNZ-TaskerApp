@@ -6,7 +6,7 @@
         input:"text",
         inputPlaceholder: "Nombre",
         inputValue:"",
-        footer: "Información inportante",
+        footer: "Información importante",
         padding: "1rem", 
         backdrop:true,
         position: "top",
