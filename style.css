@@ -25,6 +25,35 @@
 
 /* WEATHER */
 
+#container {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+#inf {
+  display: flex;
+  justify-content: space-between;
+}
+
+#location {
+  display: flex;
+}
+
+#location img {
+  width: 70px;
+  height: 70px;
+}
+
+#temp {
+  display: flex;
+  margin-left: 15px;
+  height:40px;
+}
+
+#temp h4{
+  margin-right: 4px;  
+}
 
 
 
